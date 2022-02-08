@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loading"
+        android:text="Click me"
+        app:iconSize="24dp"
+        app:iconTint="@color/white"
+        android:freezesText="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/randomizeText"
+        android:text="randomize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/random_text_x"
+        android:freezesText="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include android:id="@+id/include1"
+        layout="@layout/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include android:id="@+id/include2"
+        layout="@layout/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
